@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 17%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 40px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #09e71b;
+        }
+
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                display: none;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+        /* CSS for NavBar */
+        #NavBar {
+            background-color: green;
+            overflow: hidden;
+            animation: 1s ease-out 0s 1 slideInLeft;
+            /* margin-top: 50px; */
+        }
+
+        /* CSS for NavBar Anchor Tag i.e. Links  */
+        #NavBar a {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            float: left;
+            display:flex;
+        }
+
+        /* Sticky Class Designed to provide Sticky Property to the Navbar using JavaScript */
+        .sticky {
+            position: fixed;
+            top: 0;
+             width: 100%; 
+        }
+        .empty{
+            /* margin-top: 10px; */
+            padding: 10px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+       
+
+        /* card css */
+   
+  
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12">
+            <div class="sidenav" id="sidenav">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+                
+                
+                
+                
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-8 col-sm-12">
+            <div  class="empty">
+                <p>This sidebar is of full height (100%) and always shown.</p>
+                <p>Scroll down the page to see the result.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+            </div>
+            <div id="NavBar" class="mt-5">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="main">
+                <div class="container">
+                    <div class="content">
+                      <h1>Pratham</h1>
+                      <h3>I love designing websites and keep things as simple as possible. My goals is to focus on minimalism and conveying the message that you want to send</h3>
+                    </div>
+                    <div class="flap"></div>
+                  </div>
+                
+                <h2>Sidebar</h2>
+                <p>This sidebar is of full height (100%) and always shown.</p>
+                <p>Scroll down the page to see the result.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                    <p>This sidebar is of full height (100%) and always shown.</p>
+                <p>Scroll down the page to see the result.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                    voluptatibus.</p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            //    alert('hi')
+            const navbar = document.querySelector('#NavBar');
+            let top = navbar.offsetTop;
+            function stickynavbar() {
+                if (window.scrollY >= top) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+            }
+            window.addEventListener('scroll', stickynavbar);
+        });
+    </script>
+</body>
+
+</html>
